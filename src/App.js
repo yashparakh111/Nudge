@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <input id={'name'} placeholder={'Enter your name'} />
+        <input className={'text-input'} id={'name'} placeholder={'Enter your name'} />
         <a
           className="App-link"
           href="https://reactjs.org"
