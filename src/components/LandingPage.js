@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import logo from "../logo.svg";
-
+import {Link} from 'react-router-dom';
 import firebase from 'firebase';
 
 class LandingPage extends Component {
@@ -9,7 +9,8 @@ class LandingPage extends Component {
         super(props);
 
         this.state = {
-            name: ""
+            name: "",
+            userID: null
         };
         this.onClick = this.onClick.bind(this);
         this.onNameChange = this.onNameChange.bind(this);
@@ -21,6 +22,15 @@ class LandingPage extends Component {
 
     onClick() {
         console.log(this.props.firebase_root);
+        var users = firebase.firestore().collection('users');
+        var userID = users.where("name", "==", this.state.name).get()
+            .then(querySnapshot => {
+                console.log(querySnapshot.empty);
+                if (querySnapshot.empty) {
+                    users.add({name: this.state.name});
+                }
+            });
+        this.setState({userID});
     }
 
     /* keeps track of the name field
@@ -38,9 +48,9 @@ class LandingPage extends Component {
 
                     <input value={this.state.name} onChange={this.onNameChange} className={'text-input'} id={'name'} placeholder={'Enter your name'} />
 
-                    <button className={'button-input'} onClick={this.onClick}>
+                    <Link className={'button-input'} onClick={this.onClick} to={"/dashboard"}>
                         Enter
-                    </button>
+                    </Link>
                 </header>
             </div>
         );
