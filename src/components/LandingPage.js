@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../App.css';
 import logo from "../logo.svg";
 
+import firebase from 'firebase';
+
 class LandingPage extends Component {
     constructor(props) {
         super(props);
@@ -13,12 +15,15 @@ class LandingPage extends Component {
         this.onNameChange = this.onNameChange.bind(this);
     }
 
-    // handles onClick
+    /*
+     *
+     */
+
     onClick() {
-        // route to the next page
+        console.log(this.props.firebase_root);
     }
 
-    /* this keeps track of the name field
+    /* keeps track of the name field
      * and changes the state accordingly
      */
     onNameChange(e) {
@@ -30,8 +35,10 @@ class LandingPage extends Component {
             <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
-                    <input onChange={this.onNameChange} className={'text-input'} id={'name'} placeholder={'Enter your name'} />
-                    <button className={'button-input'}>
+
+                    <input value={this.state.name} onChange={this.onNameChange} className={'text-input'} id={'name'} placeholder={'Enter your name'} />
+
+                    <button className={'button-input'} onClick={this.onClick}>
                         Enter
                     </button>
                 </header>

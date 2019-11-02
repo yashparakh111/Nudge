@@ -43,7 +43,8 @@ export default class App extends React.Component {
         return (
             <Router history={history}>
                 <Route exact path={'/'}
-                       component={LandingPage}
+                       render={props => <LandingPage {...props}
+                                                     firebase_root = {this.state.firebase_root}/> }
                 />
 
                 <Route path={'/dashboard'}
