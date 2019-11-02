@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Router, Route } from "react-router-dom";
+import history from './History.js'
+
 import LandingPage from "./components/LandingPage";
-import './App.css';
+import DashboardScreen from "./components/DashboardScreen";
 
 class App extends Component {
     render() {
         return (
-            <LandingPage/>
+            <Router history={history}>
+                <Route exact path={'/'}
+                       component={LandingPage}
+                />
+
+                <Route path={'/dashboard'}
+                       component={DashboardScreen}
+                />
+            </Router>
         )
     }
 }
