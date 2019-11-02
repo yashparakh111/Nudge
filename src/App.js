@@ -3,6 +3,7 @@ import firebase from 'firebase';
 import logo from './logo.svg';
 import './App.css';
 import LandingPage from "./components/LandingPage";
+import StudyScreen from './components/StudyScreen';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -36,7 +37,7 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <LandingPage />
+            <StudyScreen />
         );
     }
 }
