@@ -8,14 +8,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <input className={'text-input'} id={'name'} placeholder={'Enter your name'} />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Start Focusing!
-        </a>
+        <button className={'button-input'}>
+            Enter
+        </button>
       </header>
     </div>
   );
