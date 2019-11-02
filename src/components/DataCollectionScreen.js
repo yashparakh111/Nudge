@@ -5,7 +5,7 @@ class DataCollectionScreen extends Component {
     render() {
         return(
             <p>
-                This is the dashboard screen.
+                This is the data collection screen.
             </p>
         )
     }
