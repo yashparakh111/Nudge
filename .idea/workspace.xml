@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b207c94-8407-49b1-bff8-df0cb47b1e49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/DashboardScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DataCollectionScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StudyScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,6 +14,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572723156437</updated>
-      <workItem from="1572723158251" duration="4017000" />
+      <workItem from="1572723158251" duration="5666000" />
     </task>
     <servers />
   </component>

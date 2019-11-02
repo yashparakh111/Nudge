@@ -1,19 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
+import LandingPage from "./components/LandingPage";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <input className={'text-input'} id={'name'} placeholder={'Enter your name'} />
-        <button className={'button-input'}>
-            Enter
-        </button>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <LandingPage/>
+        )
+    }
 }
 
 export default App;
